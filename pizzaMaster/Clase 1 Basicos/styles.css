@@ -1,0 +1,36 @@
+/* con el selector universal dar un box-sizing de border-box */
+body {
+    box-sizing: border-box;
+}
+
+/* color de fondo para el body es gris #494949 */
+body {
+    background-color: #494949;
+
+    /* paddin y margin de 0 y overflow en hidden*/
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+/* para la clase de contenedor-juego una posision relativa un ancho de 352 pixels un alto de 198 pixels*/
+.contenedor-juego {
+    position: relative;
+    width: 352px;
+    height: 198px;
+
+    outline: 1px solid white;
+
+    /* mover el contenedor-juego al centro */
+    margin: auto;
+
+    /* transformar la escala a 2.5 trasladarlo en y 50% */
+    transform: scale(1.5) translateY(40%);
+
+}
+
+/* en el canvas contenido dentro de contenedor-juego hacer el rederizado de las amagenes en pixelated */
+.contenedor-juego canvas {
+    image-rendering: pixelated;
+}
